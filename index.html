@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>foodgrid. | if it looks good, eat it.</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href='index.html' class='logo'>fg.</a>
+      <input class='search2 hidden' type='text' placeholder="search"></input>
+      <button type="submit" class="submit-button hidden" name="submit-button">search</button>
+    </nav>
+    <main class='main-body'>
+
+    <section id="rest-info"></section>
+
+    <section id="query">
+      <h1 class="main-header">foodgrid.</h1>
+      <h4 class='tagline'>if it looks good, eat it.</h4>
+
+      <div class='info'>
+        <p>your on-demand, point-and-click picture menu for when you can't decide what to eat.</p>
+        <p>just enter a location to get started, and click on whatever catches your eye.</p>
+      </div>
+
+      <form class="query-form" action="index.html" method="post">
+        <label>where ya lookin'?</label><br>
+        <input type="text" id="location" name="location" placeholder="city, state, or address" required><br>
+        <button type="submit" class="submit-button" name="submit-button">submit</button>
+      </form>
+    </section>
+
+
+      <div class="grid">
+
+      </div>
+
+
+    </main>
+    <!-- <footer><a href="#">start over</footer> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: helvetica;
+  text-align: center;
+}
+
+.navbar, footer {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  align-items: center;
+}
+
+nav button {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: -2px;
+  float: left;
+  padding-left: 10px;
+  text-decoration-line: none;
+}
+
+.main-header {
+  font-size: 50px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+#query {
+  margin: auto;
+  padding-top: 20vh;
+}
+
+.info {
+  padding: 30px 20px 0;
+  font-size: 12px;
+  color: gray;
+  letter-spacing: -.5px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.query-form {
+  padding: 15px 15px;
+}
+
+.query-form > label, input, button {
+  margin: 5px;
+}
+
+.query-form input {
+  padding: 10px;
+}
+
+.search2 {
+  padding: 7px;
+  color: grey;
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.query-form button {
+  border: none;
+  background-color: white;
+}
+
+form label {
+  font-size: 12px;
+  letter-spacing: -.5px
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: -1px;
+  padding: 3px;
+  align-self: center;
+}
+
+.main-body {
+  display: grid;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+.thumb {
+  width: 50vw;
+  object-fit: cover;
+}
+
+/* .photos img {
+  width: 200px;
+  height: 200px;
+} */
