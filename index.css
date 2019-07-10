@@ -130,7 +130,16 @@ footer a {
   object-fit: cover;
 }
 
-/* .photos img {
-  width: 200px;
-  height: 200px;
-} */
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  }
+
+  .thumb {
+    width: 20vw;
+    object-fit: cover;
+  }
+
+  .thumb:hover {
+    opacity: 0.9;
+  }
