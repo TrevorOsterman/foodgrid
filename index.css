@@ -22,6 +22,11 @@ a:hover, button:hover {
   align-items: center;
 }
 
+.navbar {
+  position: fixed;
+  opacity: 1.0;
+}
+
 nav button {
   color: white;
 }
@@ -53,7 +58,7 @@ nav button {
 
 #query {
   margin: auto;
-  margin-top: 7vh;
+  margin-top: 15vh;
   padding: 10px;
   background-color: white;
   border: 2vw dashed black;
@@ -140,6 +145,7 @@ footer a {
   display: grid;
   grid-template-columns: 50vw 50vw;
   font-size: 0;
+  padding: 50px 0 0 0;
 }
 
 .thumb {
