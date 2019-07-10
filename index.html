@@ -9,8 +9,8 @@
   <body>
     <nav class="navbar">
       <a href='index.html' class='logo'>fg.</a>
-      <input class='search2 hidden' type='text' placeholder="search"></input>
-      <button type="submit" class="submit-button hidden" name="submit-button">search</button>
+      <input id='searchbar' class='search2 hidden' type='text' placeholder="search"></input>
+      <a id="search-link" class="hidden">go</a>
     </nav>
     <main class='main-body'>
 
@@ -26,7 +26,7 @@
       </div>
 
       <form class="query-form" action="index.html" method="post">
-        <label>where ya lookin'?</label><br>
+        <label>so where ya lookin'?</label><br>
         <input type="text" id="location" name="location" placeholder="city, state, or address" required><br>
         <button type="submit" class="submit-button" name="submit-button">submit</button>
       </form>

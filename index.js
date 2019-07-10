@@ -51,8 +51,18 @@ function displayResults(responseJson) {
     let cw = $('.thumb').width();
     $('.thumb').css({'height':cw+'px'});
     $('.search2').removeClass('hidden');
-    $('.submit-button').removeClass('hidden');
+    $('#search-link').removeClass('hidden');
   }
+}
+
+function searchListen() {
+  console.log('searchListen working')
+  $('body').on('click', '#search-link', function(event){
+    event.preventDefault();
+    const loc = $('#searchbar').val();
+    // const spec = $('#spec').val();
+    dataReturn(loc);
+  })
 }
 
 function formListen() {
@@ -67,6 +77,7 @@ function formListen() {
 
 function handlePage(){
   formListen();
+  searchListen();
 }
 
 $(handlePage);
