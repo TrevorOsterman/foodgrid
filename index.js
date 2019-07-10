@@ -47,7 +47,7 @@ function displayResults(responseJson) {
   $(".grid").empty();
   for (let i = 0; i < responseJson.businesses.length; i++){
     console.log(responseJson.businesses[i].name);
-    $('.grid').append(`<a class='thumb' href="${responseJson.businesses[i].url}"><img src="${responseJson.businesses[i].image_url}" class='thumb' alt='biz-thumb'></a>`);
+    $('.grid').append(`<a class='thumb' href="${responseJson.businesses[i].url}" target='_blank'><img src="${responseJson.businesses[i].image_url}" class='thumb' alt='biz-thumb'></a>`);
     let cw = $('.thumb').width();
     $('.thumb').css({'height':cw+'px'});
     $('.search2').removeClass('hidden');
