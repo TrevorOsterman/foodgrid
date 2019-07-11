@@ -20,6 +20,7 @@ a:hover, button:hover {
   background-color: black;
   height: 50px;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar {
@@ -29,6 +30,15 @@ a:hover, button:hover {
 
 nav button {
   color: white;
+}
+
+#goback {
+  color: white;
+  font-size: 35px;
+  position: fixed;
+  right:0;
+  padding-right: 20px;
+  text-decoration-line: none;
 }
 
 .hidden {
@@ -78,7 +88,7 @@ nav button {
 }
 
 .query-form > input, button {
-  margin: 5px;
+  margin: 10px;
   font-size: 14px;
 }
 
@@ -90,14 +100,19 @@ nav button {
   padding: 10px;
 }
 
+/* input#location {
+  border: 7px dashed black;
+} */
+
 .search2 {
   padding: 7px;
   color: rgb(207, 207, 207);
   background-color: black;
-  border: none;
+  border: 1px solid rgb(205, 205, 205, .5);
   margin-left: 15px;
   margin-right: 15px;
   font-size: 15px;
+  width: 75px;
 }
 
 #location {
@@ -120,6 +135,10 @@ nav button {
 form label {
   font-size: 12px;
   letter-spacing: -.5px
+}
+
+.submit-button:hover, .logo:hover, #goback:hover, #search-link:hover {
+  color: rgb(223, 195, 77);
 }
 
 footer {
@@ -166,3 +185,21 @@ footer a {
   .thumb:hover {
     opacity: 0.9;
   }
+
+  .info {
+    font-size: 16px;
+  }
+
+@media screen and (min-width: 1000px) {
+  .main-header {
+    font-size: 12vw;
+  }
+
+  .tagline {
+    font-size: 2vw;
+  }
+
+  .query-form button, .query-form label {
+    font-size: 20px;
+  }
+}

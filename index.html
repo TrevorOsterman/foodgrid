@@ -11,35 +11,24 @@
       <a href='index.html' class='logo'><b>fg.</b></a>
       <input id='searchbar' class='search2 hidden' type='text' placeholder="search"></input>
       <a id="search-link" class="hidden">go</a>
+      <a id="goback" class='hidden' href='index.html'>←</a>
     </nav>
     <main class='main-body'>
-
-    <section id="rest-info"></section>
-
     <section id="query">
       <h1 class="main-header">foodgrid.</h1>
       <h4 class='tagline'>if it looks good, eat it.</h4>
-
       <div class='info'>
         <p>your on-demand, no-frills, point-and-click picture menu for when you can't decide what to eat.</p>
         <p>just enter a location to get started, and click on whatever catches your eye.</p>
       </div>
-
       <form class="query-form" action="index.html" method="post">
-        <label>so where ya lookin'?</label><br>
-        <input type="text" id="location" name="location" placeholder="city, state, or address" required><br>
+        <label><b>so where ya lookin'?<b></label><br>
+        <input type="text" id="location" name="location" placeholder="city, address, or ZIP" required><br>
         <button type="submit" class="submit-button" name="submit-button"><b>feed me</b></button>
       </form>
     </section>
-
-
-      <div class="grid">
-
-      </div>
-
-
+      <div class="grid"></div>
     </main>
-    <!-- <footer><a href="#">start over</footer> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
