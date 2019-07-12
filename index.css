@@ -100,9 +100,13 @@ nav button {
   padding: 10px;
 }
 
-/* input#location {
-  border: 7px dashed black;
-} */
+#errormsg {
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+  width: 25vw;
+
+}
 
 .search2 {
   padding: 7px;
@@ -130,6 +134,7 @@ nav button {
 .query-form button {
   border: none;
   background-color: white;
+  font-size: 20px;
 }
 
 form label {
