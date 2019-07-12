@@ -104,8 +104,10 @@ nav button {
   font-size: 12px;
   font-style: italic;
   color: gray;
-  width: 25vw;
+}
 
+.err {
+  width: 60vw;
 }
 
 .search2 {
