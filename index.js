@@ -25,9 +25,7 @@ function dataReturn(loc){
       throw new Error(response.statusText);
     })
     .then(responseJson => displayResults(responseJson))
-    .catch(err => {
-      $('#js-error-message').text(`Something went wrong: ${err.message}`);
-    });
+    .catch(err => alert(`uh oh, looks like that was a 'bad request', which means you're probably typing gibberish. how about we try a good request.`));
 }
 
 /* Hide landing page, display results using jQuery */
