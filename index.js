@@ -58,7 +58,6 @@ function formListen() {
   $('body').on('click', '.submit-button', function(event){
     event.preventDefault();
     const loc = $('#location').val();
-    // const spec = $('#spec').val();
     dataReturn(loc);
   })
 }
